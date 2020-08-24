@@ -25,6 +25,8 @@ public class Rocket extends Turtle
         int eins = 0;
         int zwei = 0;
         
+        private int t ;
+        
     
     
     /**
@@ -100,6 +102,16 @@ public class Rocket extends Turtle
             System.out.println("Es wurden " + diste + " Schritte hin und zurück gegangen =)");/*Satz zum Ende*/
             ende = true;/*Ende wird auser Kraft gesetzt*/
         }
+        }
+        
+        public void RichtigeRekursion (int t){
+        
+            if (t != 0) {
+                move(1);
+                RichtigeRekursion(t - 1);
+                move(1);
+            }
+            else{ turn(180);}
         }
        
     }

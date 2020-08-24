@@ -8,4 +8,6 @@ comment2.params=
 comment2.target=void\ test()
 comment3.params=abc
 comment3.target=void\ Rekursion(double)
-numComments=4
+comment4.params=t
+comment4.target=void\ RichtigeRekursion(int)
+numComments=5
